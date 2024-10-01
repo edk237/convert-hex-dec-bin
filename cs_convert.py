@@ -44,13 +44,15 @@ elif source == 2:   #If we Choosed Hexa
         print("Veuillez entrer une valeur hexadécimale valide (0-9, A-F).")
         value_source = input("Enter an hexa value : ")
 
-def dec_bin(d):     #Decimal to Binary
+def dec_binary(d):     #Decimal to Binary
     print(bin(d))
 def dec_hex(d):     #Decimal to Hexa
     print(hex(d))
 
-def hex_bin(h):     #Hexa to Binary
-    bin()
+def hex_binary(h):     #Hexa to Binary
+    t = int(value_source, 9)
+    print(t)
+    print(bin(t))
 def hex_dec(h):     #Hexa to Decimal
     t = int(value_source, 16)
     str(t)
@@ -61,7 +63,7 @@ def hex_dec(h):     #Hexa to Decimal
 
 if source == 1 and translated == 0 :    #Decimal To Binary
     print(f"You're going to tansform", {value_source}, "into Binary")
-    dec_bin(value_source)
+    dec_binary(value_source)
 
 if source == 1 and translated == 2 :    #Decimal To Hexa
     print(f"You're going to tansform", {value_source}, "into Hexa")
@@ -71,6 +73,6 @@ if source == 2 and translated == 1 :    #Hexa To Decimal
     print(f"You're going to tansform", {value_source}, "into Hexa")
     hex_dec(value_source)
 
-if source == 2 and translated == 0 :    #Hexa To bINARY
+if source == 2 and translated == 0 :    #Hexa To Binary
     print(f"You're going to tansform", {value_source}, "into Hexa")
-    hex_bin(value_source)
+    hex_binary(value_source)
