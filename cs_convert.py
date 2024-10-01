@@ -44,35 +44,35 @@ elif source == 2:   #If we Choosed Hexa
         print("Veuillez entrer une valeur hexadécimale valide (0-9, A-F).")
         value_source = input("Enter an hexa value : ")
 
-def dec_binary(d):     #Decimal to Binary
+def dec_binary(d):     # Decimal to Binary
     print(bin(d))
-def dec_hex(d):     #Decimal to Hexa
+
+def dec_hex(d):     # Decimal to Hexa
     print(hex(d))
 
-def hex_binary(h):     #Hexa to Binary
-    t = int(value_source, 9)
-    print(t)
-    print(bin(t))
-def hex_dec(h):     #Hexa to Decimal
-    t = int(value_source, 16)
-    str(t)
-    print(t)
+def hex_binary(h):     # Hexa to Binary
+    print(f'{0xdaf:b}')
+
+def hex_dec(h):     # Hexa to Decimal
+    h = int(value_source, 16)
+    str(h)
+    print(h)
 
 # def bin_dec(b):
 # def bin_hex(b):
 
-if source == 1 and translated == 0 :    #Decimal To Binary
-    print(f"You're going to tansform", {value_source}, "into Binary")
+if source == 1 and translated == 0:    # Decimal To Binary
+    print(f"You're going to transform {value_source} into Binary")
     dec_binary(value_source)
 
-if source == 1 and translated == 2 :    #Decimal To Hexa
-    print(f"You're going to tansform", {value_source}, "into Hexa")
+if source == 1 and translated == 2:    # Decimal To Hexa
+    print(f"You're going to transform {value_source} into Hexa")
     dec_hex(value_source)
 
-if source == 2 and translated == 1 :    #Hexa To Decimal
-    print(f"You're going to tansform", {value_source}, "into Hexa")
+if source == 2 and translated == 1:    # Hexa To Decimal
+    print(f"You're going to transform {value_source} into Hexa")
     hex_dec(value_source)
 
-if source == 2 and translated == 0 :    #Hexa To Binary
-    print(f"You're going to tansform", {value_source}, "into Hexa")
+if source == 2 and translated == 0:    # Hexa To Binary
+    print(f"You're going to transform {value_source} into Hexa")
     hex_binary(value_source)
